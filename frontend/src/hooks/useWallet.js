@@ -1,16 +1,55 @@
 import { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
 
-const POLYGON_AMOY = {
-  chainId: '0x13882', // 80002 in hex
-  chainName: 'Polygon Amoy Testnet',
-  nativeCurrency: {
-    name: 'MATIC',
-    symbol: 'MATIC',
-    decimals: 18
+export const NETWORKS = {
+  POLYGON_AMOY: {
+    id: '0x13882',
+    name: 'Polygon Amoy',
+    chainName: 'Polygon Amoy Testnet',
+    nativeCurrency: {
+      name: 'MATIC',
+      symbol: 'MATIC',
+      decimals: 18
+    },
+    rpcUrls: ['https://rpc-amoy.polygon.technology/'],
+    blockExplorerUrls: ['https://amoy.polygonscan.com/']
   },
-  rpcUrls: ['https://rpc-amoy.polygon.technology/'],
-  blockExplorerUrls: ['https://amoy.polygonscan.com/']
+  ARBITRUM_SEPOLIA: {
+    id: '0x66eee',
+    name: 'Arbitrum Sepolia',
+    chainName: 'Arbitrum Sepolia',
+    nativeCurrency: {
+      name: 'ETH',
+      symbol: 'ETH',
+      decimals: 18
+    },
+    rpcUrls: ['https://arbitrum-sepolia.blockpi.network/v1/rpc/public'],
+    blockExplorerUrls: ['https://sepolia.arbiscan.io']
+  },
+  MORPH_TESTNET: {
+    id: '0xafa',
+    name: 'Morph Testnet',
+    chainName: 'Morph Testnet',
+    nativeCurrency: {
+      name: 'ETH',
+      symbol: 'ETH',
+      decimals: 18
+    },
+    rpcUrls: ['https://rpc-quicknode-holesky.morphl2.io'],
+    blockExplorerUrls: ['https://explorer-holesky.morphl2.io']
+  },
+  BASE_SEPOLIA: {
+    id: '0x14a34',
+    name: 'Base Sepolia',
+    chainName: 'Base Sepolia',
+    nativeCurrency: {
+      name: 'ETH',
+      symbol: 'ETH',
+      decimals: 18
+    },
+    rpcUrls: ['https://sepolia.base.org'],
+    blockExplorerUrls: ['https://sepolia.basescan.org/']
+  }
 };
 
 export const useWallet = () => {
@@ -18,30 +57,37 @@ export const useWallet = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [chainId, setChainId] = useState(null);
+  const [selectedNetwork, setSelectedNetwork] = useState(NETWORKS.POLYGON_AMOY);
 
-  const switchToPolygonAmoy = async () => {
+  const switchNetwork = async (network) => {
     if (!window.ethereum) return;
 
     try {
-      // Try to switch to Polygon Amoy
       await window.ethereum.request({
         method: 'wallet_switchEthereumChain',
-        params: [{ chainId: POLYGON_AMOY.chainId }],
+        params: [{ chainId: network.id }],
       });
+      setSelectedNetwork(network);
     } catch (switchError) {
-      // This error code indicates that the chain has not been added to MetaMask
       if (switchError.code === 4902) {
         try {
           await window.ethereum.request({
             method: 'wallet_addEthereumChain',
-            params: [POLYGON_AMOY],
+            params: [{
+              chainId: network.id,
+              chainName: network.chainName,
+              nativeCurrency: network.nativeCurrency,
+              rpcUrls: network.rpcUrls,
+              blockExplorerUrls: network.blockExplorerUrls
+            }],
           });
+          setSelectedNetwork(network);
         } catch (addError) {
-          setError('Failed to add Polygon Amoy network');
+          setError(`Failed to add ${network.name} network`);
           console.error(addError);
         }
       } else {
-        setError('Failed to switch to Polygon Amoy network');
+        setError(`Failed to switch to ${network.name} network`);
         console.error(switchError);
       }
     }
@@ -57,23 +103,19 @@ export const useWallet = () => {
       setLoading(true);
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       
-      // Request accounts
       await provider.send('eth_requestAccounts', []);
       
-      // Get signer and address
       const signer = provider.getSigner();
       const address = await signer.getAddress();
       setAccount(address);
       setError(null);
 
-      // Get current chain ID
       const network = await provider.getNetwork();
       const currentChainId = '0x' + network.chainId.toString(16);
       setChainId(currentChainId);
 
-      // Switch to Polygon Amoy if not already on it
-      if (currentChainId !== POLYGON_AMOY.chainId) {
-        await switchToPolygonAmoy();
+      if (currentChainId !== selectedNetwork.id) {
+        await switchNetwork(selectedNetwork);
       }
     } catch (err) {
       setError('Failed to connect wallet');
@@ -94,21 +136,13 @@ export const useWallet = () => {
       if (window.ethereum) {
         try {
           const provider = new ethers.providers.Web3Provider(window.ethereum);
-          
-          // Get accounts
           const accounts = await provider.listAccounts();
           
           if (accounts.length > 0) {
             setAccount(accounts[0]);
-            
-            // Check if we're on the correct network
             const network = await provider.getNetwork();
             const currentChainId = '0x' + network.chainId.toString(16);
             setChainId(currentChainId);
-
-            if (currentChainId !== POLYGON_AMOY.chainId) {
-              await switchToPolygonAmoy();
-            }
           }
         } catch (err) {
           console.error('Connection check error:', err);
@@ -128,10 +162,11 @@ export const useWallet = () => {
       }
     };
 
-    const handleChainChanged = async (newChainId) => {
+    const handleChainChanged = (newChainId) => {
       setChainId(newChainId);
-      if (newChainId !== POLYGON_AMOY.chainId) {
-        await switchToPolygonAmoy();
+      const network = Object.values(NETWORKS).find(n => n.id.toLowerCase() === newChainId.toLowerCase());
+      if (network) {
+        setSelectedNetwork(network);
       }
     };
 
@@ -153,9 +188,11 @@ export const useWallet = () => {
     loading, 
     error, 
     chainId,
+    selectedNetwork,
+    networks: NETWORKS,
     connectWallet, 
     disconnectWallet,
-    switchToPolygonAmoy,
+    switchNetwork,
     isConnected: !!account
   };
 };

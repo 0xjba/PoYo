@@ -1,8 +1,13 @@
-// src/hooks/useSentiment.js
 import { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
 
-const CONTRACT_ADDRESS = '0x21c8ef1026Fc82eE4c32451DF2Fc5Aa4F86b2cdE';
+const CONTRACTS = {
+  POLYGON_AMOY: '0x21c8ef1026Fc82eE4c32451DF2Fc5Aa4F86b2cdE',
+  ARBITRUM_SEPOLIA: '0x1234567890123456789012345678901234567890', // Replace with actual address
+  MORPH_TESTNET: '0x2345678901234567890123456789012345678901', // Replace with actual address
+  BASE_SEPOLIA: '0x3456789012345678901234567890123456789012' // Replace with actual address
+};
+
 const ABI = [
   "function submitVote(string memory symbol, bool isBullish) external",
   "function getTokenSentiment(string memory symbol) external view returns (uint256 bullishVotes, uint256 bearishVotes, uint256 totalVotes, uint256 sentimentScore)",
@@ -10,19 +15,30 @@ const ABI = [
   "function getUserVoteStatus(string memory symbol, address user) external view returns (bool hasVoted, bool isBullish, uint256 timestamp)"
 ];
 
-export function useSentiment(symbol, userAddress) {
+export function useSentiment(symbol, userAddress, selectedNetwork) {
   const [sentiment, setSentiment] = useState(null);
   const [userVoteStatus, setUserVoteStatus] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  const getContractAddress = () => {
+    const networkKey = Object.keys(CONTRACTS).find(
+      key => key === selectedNetwork?.name?.toUpperCase()?.replace(' ', '_')
+    );
+    return networkKey ? CONTRACTS[networkKey] : null;
+  };
+
   useEffect(() => {
     const loadSentimentData = async () => {
       try {
-        const provider = new ethers.providers.Web3Provider(window.ethereum);
-        const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, provider);
+        const contractAddress = getContractAddress();
+        if (!contractAddress) {
+          throw new Error('No contract address for selected network');
+        }
 
-        // Get sentiment data
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const contract = new ethers.Contract(contractAddress, ABI, provider);
+
         const [bullish, bearish, total, score] = await contract.getTokenSentiment(symbol);
         setSentiment({
           bullishVotes: bullish.toNumber(),
@@ -31,7 +47,6 @@ export function useSentiment(symbol, userAddress) {
           sentimentScore: score.toNumber()
         });
 
-        // Get user's vote status if address available
         if (userAddress) {
           const [hasVoted, isBullish, timestamp] = await contract.getUserVoteStatus(symbol, userAddress);
           const canVote = await contract.canUserVote(symbol, userAddress);
@@ -51,22 +66,26 @@ export function useSentiment(symbol, userAddress) {
       }
     };
 
-    if (symbol) {
+    if (symbol && selectedNetwork) {
       loadSentimentData();
     }
-  }, [symbol, userAddress]);
+  }, [symbol, userAddress, selectedNetwork]);
 
   const submitVote = async (isBullish) => {
     try {
+      const contractAddress = getContractAddress();
+      if (!contractAddress) {
+        throw new Error('No contract address for selected network');
+      }
+
       setIsLoading(true);
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const signer = provider.getSigner();
-      const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
+      const contract = new ethers.Contract(contractAddress, ABI, signer);
 
       const tx = await contract.submitVote(symbol, isBullish);
       await tx.wait();
 
-      // Refresh data after vote
       const [bullish, bearish, total, score] = await contract.getTokenSentiment(symbol);
       setSentiment({
         bullishVotes: bullish.toNumber(),

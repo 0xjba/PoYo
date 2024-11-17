@@ -1,0 +1,151 @@
+{"level":"info","message":"Cached 30983 token mappings","timestamp":"2024-11-16T15:17:09.115Z"}
+{"level":"info","message":"Token list cache initialized","timestamp":"2024-11-16T15:17:09.116Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T15:17:09.119Z"}
+{"level":"info","message":"GET /health","query":{},"timestamp":"2024-11-16T15:17:19.816Z"}
+{"level":"info","message":"Cached 30983 token mappings","timestamp":"2024-11-16T15:58:58.749Z"}
+{"level":"info","message":"Token list cache initialized","timestamp":"2024-11-16T15:58:58.750Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T15:58:58.751Z"}
+{"level":"info","message":"Cached 30984 token mappings","timestamp":"2024-11-16T16:30:49.784Z"}
+{"level":"info","message":"Token list cache initialized","timestamp":"2024-11-16T16:30:49.785Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T16:30:49.786Z"}
+{"level":"info","message":"Cached 30984 token mappings","timestamp":"2024-11-16T16:31:11.989Z"}
+{"level":"info","message":"Token list cache initialized","timestamp":"2024-11-16T16:31:11.990Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T16:31:11.991Z"}
+{"level":"info","message":"Cached 30984 token mappings","timestamp":"2024-11-16T16:31:27.471Z"}
+{"level":"info","message":"Token list cache initialized","timestamp":"2024-11-16T16:31:27.472Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T16:31:27.473Z"}
+{"level":"info","message":"Cached 30984 token mappings","timestamp":"2024-11-16T16:44:31.753Z"}
+{"level":"info","message":"Token list cache initialized","timestamp":"2024-11-16T16:44:31.754Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T16:44:31.755Z"}
+{"level":"info","message":"Cached 30984 token mappings","timestamp":"2024-11-16T16:45:57.010Z"}
+{"level":"info","message":"Token list cache initialized","timestamp":"2024-11-16T16:45:57.011Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T16:45:57.012Z"}
+{"level":"info","message":"Cached 30984 token mappings","timestamp":"2024-11-16T16:46:06.506Z"}
+{"level":"info","message":"Token list cache initialized","timestamp":"2024-11-16T16:46:06.510Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T16:46:06.513Z"}
+{"level":"info","message":"Cached 30984 token mappings","timestamp":"2024-11-16T16:51:05.477Z"}
+{"level":"info","message":"Token list cache initialized","timestamp":"2024-11-16T16:51:05.478Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T16:51:05.479Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T16:54:05.282Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T16:57:09.478Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T16:57:32.822Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T17:17:03.794Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T17:30:13.794Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T17:33:10.926Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T17:38:33.223Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T17:38:34.203Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T17:39:15.772Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T17:45:24.891Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T17:51:31.486Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T17:57:18.055Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T18:00:53.383Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T18:01:33.665Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T18:05:41.824Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T18:06:03.665Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T18:12:40.464Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T18:13:09.013Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T18:13:26.343Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T18:19:13.784Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T18:20:23.487Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T18:31:58.249Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T18:35:32.908Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T18:35:33.647Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T18:35:38.510Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T18:41:29.232Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T18:45:07.127Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T18:48:22.817Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T18:48:41.027Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T18:54:23.456Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T18:54:27.637Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T18:57:54.020Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T19:07:37.088Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T19:15:21.324Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T19:15:57.688Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T19:16:08.506Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T19:19:42.478Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T19:21:28.585Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T19:21:29.576Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T19:23:37.865Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T19:24:13.874Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T19:46:12.001Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T19:54:19.502Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T19:54:43.504Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T19:55:04.414Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T19:56:05.213Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T19:56:15.344Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T19:56:23.980Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T19:56:24.878Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T19:57:00.103Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T20:02:21.727Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T20:02:52.286Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T20:20:10.959Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T20:27:50.133Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T20:28:15.547Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T20:32:39.846Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T20:32:51.107Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T20:34:43.981Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T20:34:44.471Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T20:35:09.133Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T20:42:01.157Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T20:43:31.833Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T20:43:44.684Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T20:43:45.818Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T20:47:38.531Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:02:30.560Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:07:23.382Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:07:24.581Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:08:43.795Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:08:45.126Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:09:23.439Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:12:33.881Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:12:44.300Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:15:20.541Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:15:27.525Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:15:47.860Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:16:05.176Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:16:29.224Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:16:40.291Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:18:47.314Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:34:47.036Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:37:33.451Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:37:46.138Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:37:55.137Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:40:09.582Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:40:27.277Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:40:37.345Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:40:45.574Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:43:03.858Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:43:13.737Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:45:32.113Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:46:13.692Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:48:52.943Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:49:41.230Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:55:38.113Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T21:57:26.396Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T22:08:27.751Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T22:09:04.463Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T22:17:47.925Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T22:17:56.458Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T22:21:52.115Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T22:30:18.051Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T22:30:18.640Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T22:30:23.807Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T22:31:01.403Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T22:35:00.561Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T22:41:44.674Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T22:44:52.091Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T22:44:54.076Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T22:49:19.531Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T22:49:21.270Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T22:50:14.840Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T22:55:59.814Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T23:03:01.674Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T23:07:02.976Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T23:07:16.469Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T23:07:40.304Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T23:13:36.050Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T23:13:46.226Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T23:15:01.489Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T23:23:15.490Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T23:29:38.488Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2024-11-16T23:29:50.930Z"}

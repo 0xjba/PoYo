@@ -1,0 +1,54 @@
+.
+├── Dockerfile
+├── backend
+│   ├── logs
+│   │   ├── combined.log
+│   │   └── error.log
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── src
+│   │   ├── config
+│   │   │   └── config.js
+│   │   ├── index.js
+│   │   ├── middleware
+│   │   │   └── webhookMonitor.js
+│   │   ├── routes
+│   │   │   └── cryptoAnalysis.js
+│   │   ├── services
+│   │   │   ├── coinGeckoService.js
+│   │   │   ├── cryptoDetectionService.js
+│   │   │   └── storageService.js
+│   │   └── utils
+│   │       ├── cache.js
+│   │       └── logger.js
+│   └── tests
+│       └── cryptoDetection.test.js
+├── directory_structure.txt
+├── docker-compose.yml
+└── frontend
+    ├── README.md
+    ├── eslint.config.js
+    ├── index.html
+    ├── package-lock.json
+    ├── package.json
+    ├── postcss.config.js
+    ├── public
+    │   ├── index.html
+    │   └── vite.svg
+    ├── src
+    │   ├── App.css
+    │   ├── App.jsx
+    │   ├── assets
+    │   │   └── react.svg
+    │   ├── components
+    │   │   ├── AnalysisCard.jsx
+    │   │   ├── AnalysisList.jsx
+    │   │   ├── Header.jsx
+    │   │   └── StatusPage.jsx
+    │   ├── hooks
+    │   │   └── useAnalyses.js
+    │   ├── index.css
+    │   ├── index.jsx
+    │   └── main.jsx
+    ├── tailwind.config.js
+    └── vite.config.js

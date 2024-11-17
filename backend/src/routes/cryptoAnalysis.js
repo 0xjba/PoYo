@@ -35,12 +35,12 @@ async function analyzeTokenWithAI(tokenData) {
     Market Dominance: ${tokenData.quote.USD.market_cap_dominance?.toFixed(2)}%
     
     Provide:
-    1. A 2-3 line market summary
+    1. A 5-7 line market summary
     2. A score out of 5 based on current market metrics (where 5 is very bullish)
     
     Format response as:
-    Summary: [2-3 line summary]
-    Score: [X/5]`;
+    Summary: [5-7 line summary]
+    AI Advisor Score: [X/5]`;
 
     const response = await fetch(`${baseUrl}/chat/completions`, {
       method: "POST",
